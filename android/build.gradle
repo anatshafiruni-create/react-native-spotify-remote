@@ -72,4 +72,5 @@ dependencies {
     implementation "com.google.code.gson:gson:2.8.5"  // needed by spotify-app-remote
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':expo-modules-core')
 }

@@ -18,5 +18,6 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "ios/external/SpotifySDK/SpotifyiOS.framework"
 
   s.dependency 'React-Core'
+  s.dependency 'ExpoModulesCore'
   
 end

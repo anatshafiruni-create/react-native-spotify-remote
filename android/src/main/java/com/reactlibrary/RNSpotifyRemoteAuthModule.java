@@ -90,7 +90,7 @@ public class RNSpotifyRemoteAuthModule extends ReactContextBaseJavaModule implem
                 // Auth flow returned an error
                 case ERROR:
                     if (authPromise != null) {
-                        String code = response.getCode();
+                        String code = response.getCode() != null ? response.getCode() : "";
                         String error = response.getError();
                         authPromise.reject(code, error);
                         mConnectionParamsBuilder = null;
